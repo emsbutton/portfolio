@@ -2,7 +2,7 @@
 <div class="py-5 border-top">
   <div class="container">
 
-    <p class="h5 mb-3">{{ site.title | escape }}</p>
+    <p class="h5">{{ site.title | escape }}</p>
 
     <div class="row">
 
@@ -16,10 +16,10 @@
             {%- endif -%}
           </li> -->
           {%- if site.email -%}
-            <li>
-              <a class="contact-links" href="mailto:{{ site.email }}">
+            <li>Connect with me: 
+              <a href="mailto:{{ site.email }}">
                 Email
-              </a>  •  <a class="contact-links" href="https://www.linkedin.com/in/elisabeth-button-aa34a620/"> LinkedIn</a>
+              </a>  •  <a href="https://www.linkedin.com/in/elisabeth-button-aa34a620/"> LinkedIn</a>
             </li>
           {%- endif -%}
         </ul>
