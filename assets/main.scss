@@ -62,6 +62,12 @@ footer {
     color: #fff;
     text-decoration: underline;
 }
-.footer-link:hover, footer-link:focus, footer-link:active {
+.footer-link:hover, .footer-link:focus, .footer-link:active {
+    color: $secondary;
+}
+.project-link {
+    color: $gray-700;
+}
+.project-link:hover, .project-link:focus, .project-link:active {
     color: $secondary;
 }
