@@ -2,27 +2,20 @@
 <div class="py-5 border-top">
   <div class="container">
 
-    <p class="h5"><img src="/portfolio/images/button.svg" class="footer-logo" alt="button icon" /> {{ site.title | escape }}</p>
+    <!-- <p class="h5">{{ site.title | escape }}</p> -->
 
     <div class="row">
 
       <div class="col-sm">
-        <ul class="list-unstyled">
-          <!-- <li>
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-          </li> -->
-          {%- if site.email -%}
-            <li>Connect with me: 
+
+          <!-- {%- if site.email -%} -->
+            <p class="contact-footer"><img src="/portfolio/images/button.svg" class="footer-logo" alt="button icon" /> Connect with me: 
               <a href="mailto:{{ site.email }}">
                 Email
               </a>  •  <a href="https://www.linkedin.com/in/elisabeth-button-aa34a620/"> LinkedIn</a>
-            </li>
-          {%- endif -%}
-        </ul>
+ </p>
+          <!-- {%- endif -%} -->
+
       </div>
 
 
