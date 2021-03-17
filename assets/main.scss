@@ -69,6 +69,6 @@ footer {
     color: $gray-700;
 }
 .project-link:hover, .project-link:focus, .project-link:active {
-    color: $primary;
-    text-decoration: none;
+    color: $secondary;
+    text-decoration: none !important;
 }
