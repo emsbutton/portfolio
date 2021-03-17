@@ -8,9 +8,14 @@
 @import "bootstrap-4-jekyll/bootstrap-4-jekyll";
 @import "bootstrap_customization";
 
-.logo {
+.header-logo {
     vertical-align: top;
     max-width: 30px;
+    margin-right: 0;
+}
+.footer-logo {
+    vertical-align: top;
+    max-width: 50px;
     margin-right: 0;
 }
 
