@@ -8,6 +8,12 @@
 @import "bootstrap-4-jekyll/bootstrap-4-jekyll";
 @import "bootstrap_customization";
 
+.logo {
+    vertical-align: top;
+    max-width: 30px;
+    margin-right: 0;
+}
+
 .smallish {
     font-size: 1.2rem;
     text-transform: uppercase;
