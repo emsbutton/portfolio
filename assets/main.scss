@@ -76,3 +76,9 @@ footer {
 .navbar-brand:hover, .navbar-brand:focus, .navbar-brand:active {
     color: $secondary !important;
 }
+.caption-link {
+    color: $tertiary;
+}
+.caption-link:hover, .caption-link:focus, .caption-link:active {
+    color: $secondary;
+}

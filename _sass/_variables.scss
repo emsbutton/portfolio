@@ -12,8 +12,7 @@ $container-max-widths: (
   xl: 800px
 ) !default;
 
-// Minty 4.3.1
-// Bootswatch
+
 
 //
 // Color system
@@ -43,7 +42,8 @@ $teal:    #20c997 !default;
 $cyan:    #6CC3D5 !default;
 
 $primary:       #573F8A !default;
-$secondary:     #73BFFA !default;
+$secondary:     #8bcbfb !default;
+$tertiary:      #51a2e1 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
