@@ -74,3 +74,6 @@ footer {
 #gallery a {
     text-decoration: none !important;
 }
+.navbar-brand:hover, .navbar-brand:focus, .navbar-brand:active {
+    color: $secondary;
+}
