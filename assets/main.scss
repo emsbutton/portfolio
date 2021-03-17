@@ -68,7 +68,7 @@ footer {
     color: $gray-700;
 }
 .project-link:hover, .project-link:focus, .project-link:active {
-    color: $secondary;
+    color: $tertiary;
 }
 #gallery a {
     text-decoration: none !important;
@@ -80,5 +80,5 @@ footer {
     color: $tertiary;
 }
 .caption-link:hover, .caption-link:focus, .caption-link:active {
-    color: $secondary;
+    text-decoration: underline;
 }
