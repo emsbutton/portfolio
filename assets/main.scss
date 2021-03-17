@@ -1,6 +1,6 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
+// ---
+// # Only the main Sass file needs front matter (the dashes are enough)
+// ---
 
 @import "variables";
 @import "bootstrap/bootstrap";
@@ -9,7 +9,7 @@
 @import "bootstrap_customization";
 
 .smallish {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
 }
 
