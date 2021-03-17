@@ -55,6 +55,13 @@
 footer {
     background-color: #5a5a5a;
 }
-.footer-contact {
+.contact-footer {
     color: #fff;
+}
+.footer-link {
+    color: #fff;
+    text-decoration: underline;
+}
+.footer-link:hover, footer-link:focus, footer-link:active {
+    color: $secondary;
 }
