@@ -73,10 +73,18 @@ footer {
     text-transform: uppercase;
     margin-top: 1rem;
 }
+.project-link {
+    color: $tertiary;
+}
+.project-link:hover, .project-link:focus, .project-link:active {
+    color: $primary;
+}
 .img-link, .lightbox-link, .img-border {
     border: 1px solid #d9d9d9;
 }
-
+#gallery a {
+    text-decoration: none !important;
+}
 
 
 
@@ -87,23 +95,16 @@ footer {
     color: $secondary;
     text-decoration: none;
 }
-.project-link {
-    color: $gray-700;
-}
-.project-link:hover, .project-link:focus, .project-link:active {
-    color: $tertiary;
-}
-#gallery a {
-    text-decoration: none !important;
-}
+
+
 .navbar-brand:hover, .navbar-brand:focus, .navbar-brand:active {
     color: $secondary !important;
 }
 
-.caption-link {
+.caption-link, .internal-link {
     color: $tertiary;
 }
-.caption-link:hover, .caption-link:focus, .caption-link:active {
+.caption-link:hover, .caption-link:focus, .caption-link:active .internal-link:hover, .internal-link:focus, .internal-link:active {
     color: $primary;
     // text-decoration: underline;
 }
