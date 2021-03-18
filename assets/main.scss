@@ -76,6 +76,11 @@ footer {
 .navbar-brand:hover, .navbar-brand:focus, .navbar-brand:active {
     color: $secondary !important;
 }
+.caption-right {
+    font-size: .8rem;
+    font-style: italic;
+    text-align: right;
+}
 .caption-link {
     color: $tertiary;
 }
