@@ -8,10 +8,14 @@
 @import "bootstrap-4-jekyll/bootstrap-4-jekyll";
 @import "bootstrap_customization";
 
+// page elements
 .header-logo {
     vertical-align: top;
     max-width: 30px;
     margin-right: 0;
+}
+footer {
+    background-color: #5a5a5a;
 }
 .footer-logo {
     vertical-align: top;
@@ -22,11 +26,34 @@
     font-size: 1rem;
 }
 
+
+// text 
 .smallish {
     font-size: 1.2rem;
     text-transform: uppercase;
 }
+.contact-footer {
+    color: #fff;
+}
+.caption-link {
+    font-style: italic;
+}
+.certs, .copy-list {
+    padding-inline-start: 18px;
+}
+.strength {
+    padding-left: .25rem;
+    padding-right: .25rem;
+}
+.caption-right {
+    font-size: .8rem;
+    font-style: italic;
+    text-align: right;
+    margin-right: -15px;
+    margin-top: .5rem;
+}
 
+// icons, graphics, images
 .fa, .fas {
     font-weight: 900;
     font-size: 3rem;
@@ -36,6 +63,12 @@
 .icon {
     text-align: center;
 }
+.square-img {
+    margin-bottom: .75rem;
+}
+
+
+// link styles
 .project-link {
     text-transform: uppercase;
     margin-top: 1rem;
@@ -43,26 +76,16 @@
 .img-link, .lightbox-link, .img-border {
     border: 1px solid #d9d9d9;
 }
-.square-img {
-    margin-bottom: .75rem;
-}
-.caption-link {
-    font-style: italic;
-}
-.certs, .copy-list {
-    padding-inline-start: 18px;
-}
-footer {
-    background-color: #5a5a5a;
-}
-.contact-footer {
-    color: #fff;
-}
+
+
+
+
 .footer-link {
     color: #fff;
 }
 .footer-link:hover, .footer-link:focus, .footer-link:active {
     color: $secondary;
+    text-decoration: none;
 }
 .project-link {
     color: $gray-700;
@@ -76,13 +99,7 @@ footer {
 .navbar-brand:hover, .navbar-brand:focus, .navbar-brand:active {
     color: $secondary !important;
 }
-.caption-right {
-    font-size: .8rem;
-    font-style: italic;
-    text-align: right;
-    margin-right: -15px;
-    margin-top: .5rem;
-}
+
 .caption-link {
     color: $tertiary;
 }
@@ -90,10 +107,8 @@ footer {
     color: $primary;
     // text-decoration: underline;
 }
-.strength {
-    padding-left: .25rem;
-    padding-right: .25rem;
-}
+
+// buttons
 .btn-strength, .btn-back {
     color: #fff;
     background-color: $tertiary;
@@ -107,6 +122,9 @@ footer {
     padding: 0.25rem;
 }
 
+
+
+//components
 .modal-header {
     align-items: center;
     padding: .5rem 1rem;
