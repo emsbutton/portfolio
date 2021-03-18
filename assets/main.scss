@@ -87,6 +87,18 @@ footer {
     color: $tertiary;
 }
 .caption-link:hover, .caption-link:focus, .caption-link:active {
-    color: $tertiary;
-    text-decoration: underline;
+    color: $primary;
+    // text-decoration: underline;
+}
+.strength {
+    padding-left: .25rem;
+    padding-right: .25rem;
+}
+.button-strength {
+    color: #fff;
+    background-color: $tertiary;
+    border: none;
+}
+.button-strength:hover, .button-strength:focus, .button-strength:active {
+    background-color: $primary;
 }
