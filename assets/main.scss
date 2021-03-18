@@ -66,6 +66,9 @@ footer {
 .square-img {
     margin-bottom: .75rem;
 }
+#gallery img, .lightbox-link, .img-border {
+    border: 1px solid #d9d9d9;
+}
 
 
 // link styles
@@ -79,9 +82,7 @@ footer {
 .project-link:hover, .project-link:focus, .project-link:active {
     color: $primary;
 }
-.img-link, .lightbox-link, .img-border {
-    border: 1px solid #d9d9d9;
-}
+
 #gallery a {
     text-decoration: none !important;
 }
