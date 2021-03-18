@@ -86,8 +86,9 @@ footer {
 #gallery a {
     text-decoration: none !important;
 }
-
-
+.img-link:hover, .img-link:focus, .img-link:active {
+    outline: solid 2px $tertiary;
+}
 
 .footer-link {
     color: #fff;
