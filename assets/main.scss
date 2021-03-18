@@ -94,12 +94,24 @@ footer {
     padding-left: .25rem;
     padding-right: .25rem;
 }
-.btn-strength {
+.btn-strength, .btn-back {
     color: #fff;
     background-color: $tertiary;
     border: none;
     width: 100%;
 }
-.btn-strength:hover, .btn-strength:focus, .btn-strength:active {
+.btn-strength:hover, .btn-strength:focus, .btn-strength:active, .btn-back:hover, .btn-back:focus, .btn-back:active {
     background-color: $primary;
+}
+.btn-back {
+    padding: 0.25rem;
+}
+
+.modal-header {
+    align-items: center;
+    padding: .5rem 1rem;
+}
+.modal-title {
+    font-size: .5rem;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
