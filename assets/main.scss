@@ -137,6 +137,7 @@ footer {
     font-size: .75rem;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
-.prettyprint {
-    white-space: pre-wrap;
+pre.prettyprint {
+white-space: pre-wrap;
+max-height: 500px;
 }
