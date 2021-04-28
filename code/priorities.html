@@ -1,0 +1,152 @@
+---
+layout: post
+title: Priorities
+---
+
+<div class="row mb-4">
+  <div class="col-12">
+    <h2>Scope</h2>
+   <ul>
+     <li>tab layout to achieve design</li>
+     <li>accordion to adapt tab layout for small screens</li>
+     <li>use bootstrap utilities to switch between the two based on breakpoints</li>
+     <li>use svg for titles to match print, sr-only instead of alt text on title images for accessible titles</li>
+   </ul>
+    </div>
+</div>
+<div class="row mb-4">
+  
+  <div class="col-12 mb-4">
+    <h2>Visuals</h2>
+    <img src="/images/health-impact-large.png" class="main-image img-border img-fluid" alt="Screenshot of the State, Nation, and World impact section of the redesigned Texas A&M Health website" /> 
+  </div>
+  
+  <div class="col-4">
+    <a href="/images/snw-state.jpg" data-toggle="lightbox" data-title="Interactive accordion customization to highlight the center's impact" data-gallery="gallery">
+      <img src="/images/snw-state.jpg" class="lightbox-link img-fluid" alt="Screenshot of redesigned Texas A&M Health website: Impact section">
+    </a>
+  </div>
+  <div class="col-4">
+    <a href="/images/snw-nation.jpg" data-toggle="lightbox" data-title="Interactive accordion customization to highlight the center's impact" data-gallery="gallery">
+      <img src="/images/snw-nation.jpg" class="lightbox-link img-fluid" alt="Screenshot of redesigned Texas A&M Health website: Impact section">
+    </a>
+  </div>
+  <div class="col-4">
+    <a href="/images/snw-world.jpg" data-toggle="lightbox" data-title="Interactive accordion customization to highlight the center's impact" data-gallery="gallery">
+      <img src="/images/snw-world.jpg" class="lightbox-link img-fluid" alt="Screenshot of redesigned Texas A&M Health website: Impact section">
+    </a>
+  </div>
+</div>
+<div class="row mb-4">
+  <div class="col-12">
+    <h2>Code</h2>
+    <pre class="prettyprint linenums scrollable"><code>
+      &lt;section class="d-flex pb-10 parallax-container"&gt;
+      &lt;div class="container"&gt;
+          &lt;div class="row text-center mb-4"&gt;
+          &lt;div class="col"&gt;
+              &lt;h2 class="section-heading mb-4"&gt;Our priorities&lt;/h2&gt;
+              &lt;p&gt;
+              Founded by the Morrill Act of 1862, Texas A&amp;M University was created to serve. Today, we lead the way for
+              health care
+              in the 21st century. We have identified three priority areas that honor our land-grant roots and keep service
+              &lt;span class="text-nowrap"&gt;at the core of our mission.&lt;/span&gt;
+              &lt;/p&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div id="priorities-text" class="d-block d-md-none"&gt;
+          &lt;div id="hp-priorities-text" class="row text-center d-flex justify-content-center"&gt;
+              &lt;div class="col-11"&gt;
+      
+              &lt;img class="priorities-icons" src="../images/graphics/rural-g.svg"
+                  alt="shape of texas with a heart in the middle" /&gt;
+              &lt;h3 class="mt-3"&gt;Rural population health&lt;/h3&gt;
+              &lt;p&gt;
+                  We’re bringing health care where it’s needed most. Through our keen focus on rural
+                  populations and innovative care delivery, we’re eliminating health disparities throughout Texas.
+              &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class="col-11"&gt;
+              &lt;img class="priorities-icons" src="../images/graphics/military-g.svg"
+                  alt="dog tags with a medical symbol on them" /&gt;
+              &lt;h3 class="mt-3"&gt;Military health&lt;/h3&gt;
+              &lt;p&gt;
+                  We honor Texas A&amp;M University’s rich military legacy. Through our unique relationship with
+                  the military academies and veteran populations, we’re improving the lives of military members and their
+                  families.
+              &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class="col-11"&gt;
+              &lt;img class="priorities-icons" src="../images/graphics/engineering-g.svg"
+                  alt="gears" /&gt;
+              &lt;h3 class="mt-3"&gt;Innovation through engineering&lt;/h3&gt;
+              &lt;p&gt;
+                  We make the impossible, possible&mdash;by creating systems and technologies that address health care’s
+                  greatest challenges, and bringing together the brightest minds in health care and engineering.
+              &lt;/p&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div id="priorities-img" class="d-none d-md-block"&gt;
+          &lt;div id="hp-priorities" class="row text-center d-flex justify-content-center"&gt;
+              &lt;div class="col-lg-4"&gt;
+              &lt;div class="hovereffect height-auto" tabindex="0"&gt;
+                  &lt;img class="img-fluid priorities-img" src="../images/include/rural-002.jpg"
+                  alt="mailbox painted with a Texas flag" /&gt;
+                  &lt;a href="/" class="overlay-dark d-flex flex-column align-items-center"&gt;
+                  &lt;img class="priorities-icons" src="../images/graphics/texas-small-min.svg"
+                      alt="shape of texas with a heart in the middle" /&gt;
+                  &lt;p&gt;
+                      We’re bringing health care where it’s needed most. Through our keen focus on rural
+                      populations and innovative care delivery, we’re eliminating health disparities throughout Texas.
+                  &lt;/p&gt;
+                  &lt;/a&gt;
+              &lt;/div&gt;
+              &lt;h3 class="mt-3"&gt;Rural population health&lt;/h3&gt;
+              &lt;/div&gt;
+              &lt;div class="col-lg-4"&gt;
+              &lt;div class="hovereffect height-auto" tabindex="0"&gt;
+                  &lt;img class="img-fluid priorities-img" src="../images/include/military-002.jpg"
+                  alt="soldier medical student learning on simulated patient" /&gt;
+                  &lt;a href="/" class="overlay-dark d-flex flex-column align-items-center"&gt;
+                  &lt;img class="priorities-icons" src="../images/graphics/dog-tags-min.svg"
+                      alt="dog tags with a medical symbol on them" /&gt;
+                  &lt;p&gt;
+                      We honor Texas A&amp;M University’s rich military legacy. Through our unique relationship with
+                      the military academies and veteran populations, we’re improving the lives of military members and their
+                      families.
+                  &lt;/p&gt;
+                  &lt;/a&gt;
+              &lt;/div&gt;
+              &lt;h3 class="mt-3"&gt;Military health&lt;/h3&gt;
+              &lt;/div&gt;
+              &lt;div class="col-lg-4"&gt;
+              &lt;div class="hovereffect height-auto" tabindex="0"&gt;
+                  &lt;img class="img-fluid priorities-img" src="../images/include/enmed-005.jpg"
+                  alt="Three Engineering Medicine students working on electrical equipment" /&gt;
+                  &lt;a href="/" class="overlay-dark d-flex flex-column align-items-center"&gt;
+                  &lt;img class="priorities-icons" src="../images/graphics/gears-heartbeat-min.svg"
+                      alt="gears" /&gt;
+                  &lt;p&gt;
+                      We make the impossible, possible&mdash;by creating systems and technologies that address health care’s
+                      greatest challenges, and bringing together the brightest minds in health care and engineering.
+                  &lt;/p&gt;
+                  &lt;/a&gt;
+              &lt;/div&gt;
+              &lt;h3 class="mt-3"&gt;Innovation through engineering&lt;/h3&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/section&gt;
+    </code>
+    </pre>
+  </div>
+</div>
+
+  <hr />
+  <div class="row">
+    <div class="col-6 col-lg-3">
+      <a class="btn btn-back"  href="/projects/index.html">Back to Projects</a>
+    </div>
+  </div>
