@@ -1,0 +1,137 @@
+---
+layout: post
+title: Code Sample - Interior Tab Navigation
+---
+
+<div class="row mb-4">
+  <div class="col-12">
+    <h2>Scope</h2>
+   <ul>
+     <li>overlay used throughout the site</li>
+     <li>custom icons</li>
+     <li>use bootstrap utilities to switch between the two based on breakpoints</li>
+   </ul>
+    </div>
+</div>
+<div class="row mb-4">
+  
+  <div class="col-12 mb-4">
+    <h2>Visuals</h2>
+    <img src="/images/interior-tabs.png" class="main-image img-border img-fluid" alt="Screenshot of the Priorities section of the redesigned Texas A&M Health website" /> 
+  </div>
+  
+  <!-- <div class="col-6">
+    <a href="/priorities-md.jpg" data-toggle="lightbox" data-title="Interactive accordion customization to highlight the center's impact" data-gallery="gallery">
+      <img src="/images/priorities-md.jpg" class="lightbox-link img-fluid" alt="Screenshot of redesigned Texas A&M Health website: Impact section">
+    </a>
+  </div>
+  <div class="col-6">
+    <a href="/images/priorities-sm.jpg" data-toggle="lightbox" data-title="Interactive accordion customization to highlight the center's impact" data-gallery="gallery">
+      <img src="/images/priorities-sm.jpg" class="lightbox-link img-fluid" alt="Screenshot of redesigned Texas A&M Health website: Impact section">
+    </a>
+  </div> -->
+  
+</div>
+<div class="row mb-4">
+  <div class="col-12">
+    <h2>Code</h2>
+    <pre class="prettyprint linenums scrollable"><code>
+    &lt;section class="tamhsc-sidebar-nav container align-self-center mb-4 mt-6 mt-lg-8"&gt;
+      &lt;div class="row"&gt;
+          &lt;nav class="col-lg-3 text-center px-0 pt-4 pt-lg-0 order-2 order-lg-1"&gt;
+              &lt;div class="mb-5"&gt;
+                  &lt;div id="sidebar-nav-accordion"&gt;
+                      &lt;div class="button-sidebar-nav mb-0"&gt;
+                          &lt;em&gt;On This Page&lt;/em&gt; &lt;i class="fas fa-level-down-alt"&gt;&lt;/i&gt;
+                      &lt;/div&gt;
+                      &lt;ul class="sidebar-nav-accordion-items nav flex-column nav-tabs" role="tablist"&gt;
+                          &lt;li class="nav-item"&gt;
+                              &lt;a aria-controls="tab-panel-1" aria-selected="true" class="nav-link active" data-toggle="tab" href="#tab-panel-1" id="tab-1" role="tab"&gt;About PharmD&lt;/a&gt;
+                          &lt;/li&gt;
+                          &lt;li class="nav-item"&gt;
+                              &lt;a aria-controls="tab-panel-2" aria-selected="false" class="nav-link" data-toggle="tab" href="#tab-panel-2" id="tab-2" role="tab"&gt;Curriculum Overview&lt;/a&gt;
+                          &lt;/li&gt;
+                          &lt;li class="nav-item"&gt;
+                              &lt;a aria-controls="tab-panel-3" aria-selected="false" class="nav-link" data-toggle="tab" href="#tab-panel-3" id="tab-3" role="tab"&gt;Careers in Pharmacy&lt;/a&gt;
+                          &lt;/li&gt;
+                      &lt;/ul&gt;
+                  &lt;/div&gt;
+                  &lt;a class="button-sidebar-nav" href="faq.html"&gt;FAQs for Applicants&lt;/a&gt;
+                  &lt;a class="button-sidebar-nav" href="apply.html"&gt;How to Apply to the PharmD Program&lt;/a&gt;
+                  &lt;a class="button-sidebar-nav" href="competitive-applicant.html"&gt;How To Be A Competitive Applicant&lt;/a&gt;
+                  &lt;a class="button-sidebar-nav" href="pharmd-mba.html"&gt;PharmD/MBA Double Degree&lt;/a&gt;
+                  &lt;a class="button-sidebar-nav" href="curriculum.html"&gt;PharmD Curriculum&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;div class="mt-5 pt-2 pb-5"&gt;
+                  &lt;contentUnderTabsText/&gt;
+              &lt;/div&gt;
+          &lt;/nav&gt;
+  &lt;!-- end sidebar nav--&gt;
+  &lt;!-- begin main content tab pane --&gt;
+          &lt;div class="col-lg-9 pl-4 mt-lg-0 order-3 order-lg-2"&gt;
+              &lt;div class="tab-content pt-4 pb-3"&gt;
+                  &lt;div aria-labelledby="tab-1" class="tab-pane  show active" id="tab-panel-1" role="tabpanel"&gt;
+                      &lt;h2&gt;Earn your &lt;span class="lowercase"&gt;PharmD&lt;/span&gt; at Texas A&amp;M&lt;/h2&gt;
+                      &lt;p&gt;The curriculum of the Doctor of Pharmacy (PharmD) program at Texas A&amp;M Irma Lerma Rangel College of Pharmacy prepares professional student pharmacists to enter the pharmacy profession with the knowledge, skills and experience expected of highly-trained health care professionals. Graduates of our four-year program practice pharmacy in a broad range of clinical and community settings in Texas and across the nation. Our curriculum prepares students to be successful, regardless of the setting in which they choose to practice (e.g., hospital pharmacy).&lt;/p&gt;
+                      &lt;p&gt;To that end, faculty-driven content is provided to develop the curriculum in biomedical sciences, pharmaceutical sciences, social/behavioral/administrative sciences and clinical sciences. The curriculum is sequenced and integrated with a planned blend of teaching and learning methods.&#160;Professional competencies expected of all graduates are systematically assessed by direct and indirect methods and administered by college faculty and affiliated professional pharmacists.&#160;Attainment of the desired student learning outcomes is assessed using both formative and summative evaluations to confirm the curricular design.&#160;The primary goal of the program is to provide a comprehensive pharmacy education in a stimulating environment that prepares students for the practice of pharmacy as competent, caring and ethical professionals dedicated to the provision of optimal pharmaceutical care.&lt;/p&gt;
+                      &lt;div class="mb-6 mt-5 justify-content-center"&gt;&lt;a class="button-primary col-lg-6" href="apply.html"&gt;Apply Now&lt;/a&gt;&lt;/div&gt;
+                      &lt;h2 class="mt-5"&gt;Experiential Education &#8212; Learn by Doing&#160;&lt;/h2&gt;
+                      &lt;p&gt;One-third of your classes, including all of your fourth year, will be spent training in clinics and hospitals. Experiential Education gets you out of the classroom and into real-word settings. Our preceptors, faculty who teach and mentor in clinical settings, provide valuable on-the-job pharmacy experience.&lt;/p&gt;
+                      &lt;p&gt;Rotations provide exposure to a variety of clinical settings and give students an opportunity to work alongside other health professions. Students complete a total of six rotations at locations including Houston, Bryan/College Station, Corpus Christi, the Rio Grande Valley, Round Rock and Temple. This is more than just an educational experience, preceptors and rotation sites can help provide networking and career opportunities after graduation.&lt;/p&gt;
+                      &lt;div class="mb-6 mt-5 justify-content-center"&gt;&lt;a class="button-primary col-lg-6" href="../experiential-education/index.html"&gt;Learn more about Experiential Education&lt;/a&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div aria-labelledby="tab-2" class="tab-pane " id="tab-panel-2" role="tabpanel"&gt;
+                      &lt;h2&gt;PharmD Curriculum Overview&lt;/h2&gt;
+                      &lt;h3&gt;First Year (P1)&lt;/h3&gt;
+                      &lt;p&gt;Students take discipline-specific courses (e.g., human physiology) that provide the basis for understanding how medications work and the diseases and illnesses the medications treat. Students also gain the knowledge and skills necessary for participating in experiential training that begins in the second year.&lt;/p&gt;
+                      &lt;h3&gt;Second Year (P2)&lt;/h3&gt;
+                      &lt;p&gt;The Integrated Pharmacotherapy (IPT) course series begins. The IPT series consists of eight courses in the P2 and P3 years that focus on medications used to treat disorders of an organ system or used to treat a specific disease. In these courses, students further their understanding of medications and learn the rationale for choosing a medication and its form, route of administration, dosage and dosing schedule. Students also take courses in pharmacokinetics, pharmacoeconomics, pharmacy management and participate in a hospital and a community pharmacy rotation.&lt;/p&gt;
+                      &lt;h3&gt;Third Year (P3)&lt;/h3&gt;
+                      &lt;p&gt;In addition to IPTs, students take courses in toxicology and poison management, patient care, pharmacy professionalism and clinical pharmacokinetics. Students also complete a week-long mini-rotation in a hospital or community pharmacy and complete Medication Therapy Management training.&lt;/p&gt;
+                      &lt;h3&gt;Fourth Year (P4)&lt;/h3&gt;
+                      &lt;p&gt;Students complete six six-week rotations (student may elect to take a seventh rotation) under the guidance of licensed pharmacists. During these rotations, students further their clinical knowledge, patient counseling skills and knowledge of pharmacy law and pharmacy practice.&lt;/p&gt;
+                      &lt;p&gt;&#160;&lt;/p&gt;
+                      &lt;a class="button-primary" href="curriculum.html"&gt;View our full curriculum&lt;/a&gt;
+                  &lt;/div&gt;
+                  &lt;div aria-labelledby="tab-3" class="tab-pane " id="tab-panel-3" role="tabpanel"&gt;
+                      &lt;h2&gt;Careers in Pharmacy&lt;/h2&gt;
+                      &lt;p&gt;It is an incredibly exciting time to pursue a career in pharmacy and students graduating from the Texas A&amp;M Irma Lerma Rangel College of Pharmacy have a wide-range of career opportunities available to them. To learn more about these opportunities, see below.&lt;/p&gt;
+                      &lt;h3 class="mt-4"&gt;Retail pharmacy&lt;/h3&gt;
+                      &lt;p&gt;The majority of pharmacists work in retail pharmacy. Retail pharmacists dispense and verify medications, counsel patients on medication use and general health topics, and recommend over-the-counter products. Additionally, depending on the pharmacy, retail pharmacists may vaccinate patients or offer medication therapy management to patients with chronic disorders or both. Retail pharmacists manage pharmacy technicians and may choose to pursue a management track.&lt;/p&gt;
+                      &lt;h3 class="mt-4"&gt;Independent pharmacy&lt;/h3&gt;
+                      &lt;p&gt;In addition to the responsibilities described under retail pharmacy, pharmacists working at an independent pharmacy may compound medications and, depending on the size of the pharmacy they own, they may manage finances, order and take inventory of items sold at the pharmacy, manage personnel, make payroll, &lt;em&gt;etc&lt;/em&gt;. Individuals interested in owning a pharmacy should consider the &lt;a href="pharmd-mba.html"&gt;PharmD/MBA Double Degree program&lt;/a&gt; offered by the Rangel College of Pharmacy and consider joining the &lt;a href="https://www.ncpanet.org/"&gt;National Community Pharmacists Association (NCPA)&lt;/a&gt;.&lt;/p&gt;
+                      &lt;h3 class="mt-4"&gt;Hospital pharmacy&lt;/h3&gt;
+                      &lt;p&gt;Hospital pharmacists advise health care providers and patients on the safe and effective use of medications and are responsible for choosing, preparing, storing, compounding, and dispensing medications. Other responsibilities include monitoring medication use, implementing hospital regulations related to medication, and other administrative tasks. Individuals interested in hospital pharmacy typically complete a pharmacy residency program and should consider joining the Student Society of Health-System Pharmacists.&lt;/p&gt;
+                      &lt;h3 class="mt-4"&gt;Clinical pharmacy&lt;/h3&gt;
+                      &lt;p&gt;Clinical pharmacists work with physicians and other health care professionals to ensure that medications contribute to optimal patient health outcomes. Responsibilities may include evaluating patient response to prescribed medications, attending patient rounds in hospital units and counseling patients. Clinical pharmacists work in hospitals, health clinics, nursing homes and insurance companies. Individuals interested in clinical pharmacy typically complete a pharmacy residency program and should consider joining the Student Society of Health-System Pharmacists.&lt;/p&gt;
+                      &lt;h3 class="mt-4"&gt;Managed care&lt;/h3&gt;
+                      &lt;p&gt;Managed care pharmacists work directly with other health care professionals to provide medication therapy management, while considering the pharmacoeconomic impact on patients. They provide a broad range of clinical services including monitoring patient safety and outcomes, managing formularies, and patient education. Managed care pharmacists typically work for health plans and pharmacy benefit management companies. Residency opportunities are available to individuals interested in managed care and interested individuals should consider joining the Academy of Managed Care Pharmacy.&lt;/p&gt;
+                      &lt;h3 class="mt-4"&gt;Industry&lt;/h3&gt;
+                      &lt;p&gt;There are a broad range of opportunities available to pharmacists in the pharmaceutical industry. They can participate in research and development, quality assurance, drug information, sales, marketing, regulatory affairs or clinical trials. Individuals interested in working in the pharmaceutical industry typically participate in postgraduate fellowship programs available at many pharmaceutical companies.&lt;/p&gt;
+                      &lt;h3 class="mt-4"&gt;Consultant pharmacy&lt;/h3&gt;
+                      &lt;p&gt;Pharmacy consultants typically work with long-term care facilities and review drug regimens, offer pharmacokinetic dosing services, patient counseling and therapeutic drug monitoring. Long-term care facilitates include nursing homes, mental institutions, home health agencies, hospice care, correctional institutions, rehabilitation centers and adult day care centers.&lt;/p&gt;
+                      &lt;h3 class="mt-4"&gt;Academia&lt;/h3&gt;
+                      &lt;p&gt;Pharmacists interested in training the next generation can pursue a career as faculty member at a college or school of pharmacy. Pharmacy faculty teach, conduct research, participate in public service, precept students and contribute to patient care. Individuals interested in a career in academia should consider residencies with significant teaching components.&lt;/p&gt;
+                      &lt;h3 class="mt-4"&gt;Nuclear pharmacy&lt;/h3&gt;
+                      &lt;p&gt;Nuclear pharmacists compound and dispense radiopharmaceuticals for use in medical procedures. Individuals interested in nuclear pharmacy must complete a training program after earning a Doctor of Pharmacy degree and should consider residency programs that focus on nuclear pharmacy. Students enrolled at the Rangel College of Pharmacy may choose to enroll in an elective nuclear pharmacy rotation in the fourth year of the PharmD program.&lt;/p&gt;
+                      &lt;h3 class="mt-4"&gt;Government agencies&lt;/h3&gt;
+                      &lt;p&gt;The National Institutes of Health, FDA, US Centers for Disease Control and Prevention, United States Department of Homeland Security, Federal Bureau of Prisons, Veterans Administration, and Armed Forces all employ pharmacists. Pharmacists working with a governmental agency engage in a wide range of tasks, including patient care, biomedical and epidemiological research, reviewing new drug applications, and developing and administering health care policy.&lt;/p&gt;
+                      &lt;h3 class="mt-4"&gt;Many other opportunities in pharmacy&lt;/h3&gt;
+                      &lt;p&gt;There are many additional employment opportunities available to pharmacists. To learn more, see the &lt;a href="../documents/admissions/pfizer-pharmacy-career-guide.pdf"&gt;Pfizer Guide to Careers In Pharmacy&lt;/a&gt;.&lt;/p&gt;
+                      &lt;p&gt;&lt;em&gt;This content was taken from the following article: Shea, T., "&lt;a href="http://www.pharmacytimes.com/contributor/timothy-o-shea/2014/10/career-paths-for-a-graduating-pharmd"&gt;Career Paths for a Graduating PharmD.&lt;/a&gt;" Pharmacy Times&lt;/em&gt;&lt;/p&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/section&gt;
+    </code>
+    </pre>
+  </div>
+</div>
+
+  <hr />
+  <div class="row">
+    <div class="col-6 col-lg-3">
+      <a class="btn btn-back"  href="/projects/index.html">Back to Projects</a>
+    </div>
+  </div>
